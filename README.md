@@ -12,9 +12,12 @@ Result of running `python asciider.py apple.webp --scale 64 32 --color`
 ![image](https://github.com/user-attachments/assets/88d56c08-9bb7-4dbc-9e07-9e0cb5116a82)  
   
 Result of running `python asciider.py apple.webp --scale 64 32 --invert-brightness`  
-![image](https://github.com/user-attachments/assets/c2a60a5b-df57-4193-9992-83d2af00571f)
-
+![image](https://github.com/user-attachments/assets/c2a60a5b-df57-4193-9992-83d2af00571f)  
   
+Result of running `python asciider.py apple.webp --scale 64 32 --color --channels-order bgr` (changing order in which color channels are interpreted)  
+![image](https://github.com/user-attachments/assets/3199a133-792f-482b-86a0-7c6b18894f8d)
+
+
 ## How to install
 To run this program you will need a python enviroment with matplotlib and numpy, to create a virtual enviroment simply run following command:
 ``` bash
@@ -30,11 +33,25 @@ source .venv/bin/activate
 .venv/Scripts/activate
 ```
 
-Then run following command to install dependacies
+Then run following command to install dependencies
 ``` bash
 pip install -r requirements.txt
 ```
+
+That's it. After pip finishes downloading libraries you can run the program from command line.  
+    
+If you have already setup a venv before, you can activate it by running:  
+(on Linux):
+``` bash
+source .venv/bin/activate
+```
   
+(on Windows):
+``` bash
+.venv/Scripts/activate
+```
+  
+### One-liners
 Linux one-liner:
 ``` bash
 python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
@@ -43,25 +60,13 @@ Windows one-liner:
 ``` bash
 python -m venv .venv && .venv/Scripts/activate && pip install -r requirements.txt
 ```
-That's it. After pip finishes downloading libraries you can run the program from command line.  
   
-If you have already setup a venv before, you can activate it by running:  
-(on Linux):
-``` bash
-source .venv/bin/activate
-```
-\ 
-(on Windows):
-``` bash
-.venv/Scripts/activate
-```
-
 ## How to run
 To run the program make sure you have required libraries and run following in the command line:
 ``` bash
 python asciider.py <path_to_image>
 ```
-
+  
 Program can be run with diffrent flags all of which can be seen by typing:
 ``` bash
 python asciider.py -h
