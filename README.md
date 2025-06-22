@@ -35,7 +35,7 @@ source .venv/bin/activate
 ```
 (on Windows):
 ``` bash
-.venv/Scripts/activate
+.venv\Scripts\activate
 ```
 
 Then run following command to install dependencies
@@ -53,7 +53,7 @@ source .venv/bin/activate
   
 (on Windows):
 ``` bash
-.venv/Scripts/activate
+.venv\Scripts\activate
 ```
   
 ### One-liners
@@ -63,7 +63,7 @@ python -m venv .venv && source .venv/bin/activate && pip install -r requirements
 ```
 Windows one-liner:
 ``` bash
-python -m venv .venv && .venv/Scripts/activate && pip install -r requirements.txt
+python -m venv .venv && .venv\Scripts\activate && pip install -r requirements.txt
 ```
   
 ## How to run
