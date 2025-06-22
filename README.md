@@ -8,7 +8,7 @@ Example usage on following image of an apple (`apple.webp`):
 Result of running `python asciider.py apple.webp --scale 64 32`  
 ![image](https://github.com/user-attachments/assets/c303d309-aa35-4663-9cca-a4837f42a29a)  
   
-Result of running `python asciider.py apple.webp --scale 64 32 --color`  
+Result of running `python asciider.py apple.webp --scale 64 32 --color`  You have unread notifications
 ![image](https://github.com/user-attachments/assets/88d56c08-9bb7-4dbc-9e07-9e0cb5116a82)  
   
 Result of running `python asciider.py apple.webp --scale 64 32 --invert-brightness`  
@@ -17,6 +17,11 @@ Result of running `python asciider.py apple.webp --scale 64 32 --invert-brightne
 Result of running `python asciider.py apple.webp --scale 64 32 --color --channels-order bgr` (changing order in which color channels are interpreted)  
 ![image](https://github.com/user-attachments/assets/3199a133-792f-482b-86a0-7c6b18894f8d)
 
+### Video rendering
+Using `--video` program will treat file as a video file and will render its contents in ASCII art form to the terminal. Frame rate of the rendering can be configured using `--fps` flag followed by an integer.  
+Below is result of running `python asciider.py rickroll-roll.gif --color --video --channels-order bgr --scale 64 32 --fps 20`  
+![out](https://github.com/user-attachments/assets/86cc23ea-a09f-4133-9dae-fd0419f51fa6)  
+  
 
 ## How to install
 To run this program you will need a python enviroment with matplotlib and numpy, to create a virtual enviroment simply run following command:
